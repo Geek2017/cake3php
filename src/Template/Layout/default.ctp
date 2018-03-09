@@ -28,7 +28,6 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 
     <?= $this->Html->css('base.css') ?>
 
-
     <?= $this->fetch('meta') ?>
     <?= $this->fetch('css') ?>
     <?= $this->fetch('script') ?>
@@ -45,9 +44,9 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
                 <li><a href="#">Features</a></li>
                 <li><a href="#">Pricing</a></li>
                 <li><a href="#">Contact</a></li>
-                <li><a href="/dashboard/users/add">Register</a></li>
-                <li id="login"><a href="/dashboard/users/login">Login</a></li>
-                <li id="logout"><a href="/dashboard/users/login">Logout</a></li>
+                <li><a href="/dev/users/add">Register</a></li>
+                <li id="login"><a href="/dev/users/login">Login</a></li>
+                <li id="logout"><a href="/dev/users/login">Logout</a></li>
             </ul>
         </div>
     </nav>

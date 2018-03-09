@@ -1,18 +1,21 @@
 <?php
-/**
- * @var \App\View\AppView $this
- * @var \App\Model\Entity\User[]|\Cake\Collection\CollectionInterface $users
- */
+
 ?>
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('New User'), ['action' => 'add']) ?></li>
+        <li><?= $this->Html->link(__('HRA Attendance'), ['action' => '']) ?></li>
+        <li><?= $this->Html->link(__('Teacher/Student Ration'), ['action' => '']) ?></li>
+        <li><?= $this->Html->link(__('Automated Lead Mgmt.'), ['action' => '']) ?></li>
+        <li><?= $this->Html->link(__('Staff Birthdays'), ['action' => '']) ?></li>
+        <li><?= $this->Html->link(__('Work Anniversaries'), ['action' => '']) ?></li>
+        <li><?= $this->Html->link(__('Classrooms Capacity Mgmt.'), ['action' => '']) ?></li>
+        <li><?= $this->Html->link(__('CACFP Billing'), ['action' => '']) ?></li>
+        <li><?= $this->Html->link(__('Food Production'), ['action' => '']) ?></li>
     </ul>
 </nav>
 <div class="users index large-9 medium-8 columns content">
-    <h3><?= __('Users') ?></h3>
-    <table cellpadding="0" cellspacing="0">
+   
+    <table cellpadding="0" cellspacing="0" hidden>
         <thead>
             <tr>
                 <th scope="col"><?= $this->Paginator->sort('id') ?></th>
@@ -40,7 +43,7 @@
             <?php endforeach; ?>
         </tbody>
     </table>
-    <div class="paginator">
+    <div class="paginator" hidden>
         <ul class="pagination">
             <?= $this->Paginator->first('<< ' . __('first')) ?>
             <?= $this->Paginator->prev('< ' . __('previous')) ?>
